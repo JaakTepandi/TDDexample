@@ -1,0 +1,9 @@
+Organisation. Retail chain XXX with large customer base
+
+System. CP - XXX profit forecast and customer Churn Prediction system
+
+Requirements (excerpt). CP must locate errors in XXX data files
+CP must be able to clean 90% of the data errors.
+CP must give information about quality of the data and cleaning made.
+CP must analyse the data in a given file for profit forecast.
+...
