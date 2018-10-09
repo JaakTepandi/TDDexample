@@ -19,3 +19,25 @@ class dc:
         f=self.file_w_headers()
         return f.profit.dtype == 'float64'
 
+    def out_msg(self):
+        if(self.file_ok()):
+           msg = "All profits are numeric. No changes in length and data types:"
+        else:
+           msg = "non-numeric profits are removed. New length and data types:"
+        return msg
+
+    def clean_file(self):
+        import pandas as pd
+        f=self.file_w_headers()
+        if(not(self.file_ok())):
+           non_numberic_profits = f.profit.str.contains('[^0-9.-]')
+           f = f.loc[~non_numberic_profits]
+           f.profit = f.profit.apply(pd.to_numeric)
+        return f
+
+    def len(self):
+        return len(self.file_w_headers())
+
+    def len_clean(self):
+        return len(self.clean_file())
+
