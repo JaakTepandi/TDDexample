@@ -1,3 +1,5 @@
-Requirement for first cycle:
+Requirement for 2. cycle:
 
-The TDD environment exists
+CP must create filename with extension from input XXX customer data file name.
+CP must input the file.
+CP must check if the data type of the 'profit' field is 'float64'. In file f500s.csv this so, in file f500e.csv it is not.
