@@ -1,9 +1,5 @@
 import unittest
-#failing test
-#from cp1c import *
-
-#successful test
-from cp2c import *
+from cpc import *
 
 class test_cleansing (unittest.TestCase):
 
