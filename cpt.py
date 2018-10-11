@@ -1,10 +1,6 @@
 import unittest
 
-#failing test
-from cp0c import cp
-
-#successful test
-#from cp1c import cp
+from cpc import cp
 
 class test_cleansing (unittest.TestCase):
 
