@@ -5,4 +5,4 @@ CP must input the file.
 CP must check if the data type of the 'profit' field is 'float64'. In file f500s.csv this so, in file f500e.csv it is not.
 CP must do data cleansing in given files.
 CP must check file lengths before and after cleansing.
-CP must output messages about the results of cleansing.
+CP must output messages about the results of cleansing. 
